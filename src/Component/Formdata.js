@@ -33,13 +33,13 @@ const FormTable = () => {
           <input type="text"id="name"value={name}onChange={(event) => setName(event.target.value)}/>
         </div>
         <div>
-          <label htmlFor="age" style={{display:'block',
-          marginBottom:'5px',fontWeight:'bold'}}>Age:</label>
+          <label htmlFor="age" style={{display:'block',marginBottom:'5px',fontWeight:'bold'}}>Age:</label>
           <input
             type="number"
             id="age"
             value={age}
-            onChange={(event) => setAge(event.target.value)}
+
+            onChange={(e) => setAge(e.target.value)}
           />
         </div>
         <div>
@@ -49,7 +49,7 @@ const FormTable = () => {
             type="text"
             id="address"
             value={address}
-            onChange={(event) => setAddress(event.target.value)}
+            onChange={(e) => setAddress(e.target.value)}
           />
         </div>
         <div>
@@ -59,7 +59,7 @@ const FormTable = () => {
             type="text"
             id="education"
             value={education}
-            onChange={(event) => setEducation(event.target.value)}
+            onChange={(e) => setEducation(e.target.value)}
           />
         </div>
         <div>
@@ -69,7 +69,7 @@ const FormTable = () => {
             type="text"
             id="phone"
             value={phone}
-            onChange={(event) => setPhone(event.target.value)}
+            onChange={(e) => setPhone(e.target.value)}
           />
         </div>
         <button type="submit" style={{display:'block',width:'100%',
